@@ -1,0 +1,72 @@
+/* Write some CSS below */
+body {
+    font-family: "Chivo", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-image: url("/images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    height: 90%;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+#btn {
+    background-color: aliceblue;
+    padding: 20px 45px;
+}
+
+.cards-section {
+    width: 80%;
+    margin: auto;
+}
+
+.cards-white {
+    background: white;
+    box-shadow: 0 0 16px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+    padding: 24px;
+    margin: 8px;
+    flex-grow: 1;
+}
+
+.cards-white img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    padding: 5px 10%;
+    background-color: rgba(20, 20, 20, 0.8);
+    color: rgba(255, 255, 255, 1.0);
+    width: 100%;
+}
+
