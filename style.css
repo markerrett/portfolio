@@ -3,6 +3,8 @@ body {
     font-family: "Overpass", sans-serif;
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -16,12 +18,18 @@ a {
     color: rgb(49, 49, 49)
 }
 
-.services {
-    width: 900px;
+.container {
+    width: 65%;
+    margin: 60px auto;
+}
+.container-work {
+    width: 80%;
     margin: 60px auto;
 }
 
 .header {
+    background-color: #333;
+    background-blend-mode: multiply;
     background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/26/write-593333_960_720.jpg");
     background-size: cover;
     background-position: center;
@@ -45,7 +53,7 @@ a {
 }
 
 #btn {
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(231, 231, 231);
     padding: 20px 45px;
     border-radius: 10px;
     color: black;
@@ -99,4 +107,18 @@ a {
 
 .fas {
     padding: 0px 10px;
+}
+
+.work {
+    background-color: rgb(53, 53, 53);
+    padding: 10px 0px;
+}
+
+#work-header {
+    color: white;
+}
+
+.view-work {
+    font-weight: 800;
+    font-size: 1.2rem;
 }
