@@ -1,21 +1,139 @@
 /* Write some CSS below */
+
+/* UNIVERSAL */
+
 body {
     font-family: "Overpass", sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    width: 100%;
     overflow-x: hidden;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Chivo", sans-serif;
+    color: inherit;
+}
+
+
+/* typography */
 
 h1, h2, h3 {
     font-family: "Chivo", sans-serif;
     color: rgb(49, 49, 49)
 }
 
-a {
-    text-decoration: none;
-    font-family: "Chivo", sans-serif;
-    color: rgb(49, 49, 49)
+
+.hero h1 {
+    font-size: 2.8rem;
+    color: white;
+    text-shadow: rgb(53, 53, 53) 1px 0 10px;
+}
+
+.hero p {
+    font-size: 28px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+    text-shadow: rgb(53, 53, 53) 1px 0 10px;
+}
+
+.contact p {
+    padding: 10px 0px;
+}
+
+
+/* Sections */
+
+.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20px;
+    min-height: 70px;
+    width: 100%;
+    box-shadow: 0 1px 5px black;;
+  }
+
+@media (max-width: 800px) {
+    .header {
+      flex-direction: column;
+      padding: 20px 0px 0px 0px;
+      margin: auto;
+    }
+}
+  
+#header-title {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    #header-title {
+      text-align: center;
+      display: inline;
+    }
+}
+  
+#header-title {
+    width: 60vw;
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    nav > ul {
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+}
+  
+.nav-link {
+    text-transform: uppercase;
+}
+
+#header-img {
+    width: 50px;
+}
+
+.logo img {
+    padding-right: 10px;
+}
+
+
+.hero {
+    background-color: #333;
+    background-blend-mode: multiply;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/26/write-593333_960_720.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 200px 0;
+    text-align: center;
+    height: 80%;
+}
+
+@media (max-width: 800px) {
+    .hero {
+      height: 50%;
+      padding: 150px 0px 40px 0px;
+    }
 }
 
 .container {
@@ -27,46 +145,8 @@ a {
     margin: 60px auto;
 }
 
-.header {
-    background-color: #333;
-    background-blend-mode: multiply;
-    background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/26/write-593333_960_720.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 150px 0;
-    text-align: center;
-    height: 90%;
-}
 
-.header h1 {
-    font-size: 2.8rem;
-    color: white;
-    text-shadow: rgb(53, 53, 53) 1px 0 10px;
-}
-
-.header p {
-    font-size: 28px;
-    margin-bottom: 80px;
-    line-height: 1.4;
-    text-shadow: rgb(53, 53, 53) 1px 0 10px;
-}
-
-#btn {
-    background-color: rgb(231, 231, 231);
-    padding: 20px 45px;
-    border-radius: 10px;
-    color: black;
-    box-shadow: 0px 4px 5px rgba(0,0,0,0.6);
-}
-
-#btn:hover {
-    background-color: #eceeee;
-    box-shadow: 0px 4px 5px rgba(0,0,0,0.6);
-
-}
-
-.cards-white, .cards-work {
+.cards-white {
     background: white;
     box-shadow: 0 0 16px rgba(0,0,0,0.1);
     border-radius: 4px;
@@ -90,6 +170,12 @@ a {
     margin-bottom: 40px;
 }
 
+@media (max-width: 800px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+}
+
 .footer {
     padding: 5px 10%;
     background-color: rgba(20, 20, 20, 0.8);
@@ -97,13 +183,30 @@ a {
     width: 100%;
 }
 
-#view {
+.next {
     text-align: center;
     font-size: 1.4rem;
     color: rgb(49, 49, 49);
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+.next-white {
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* .contact {
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+} */
 
 .fas {
     padding: 0px 10px;
@@ -114,7 +217,7 @@ a {
     padding: 10px 0px;
 }
 
-#work-header {
+.work-header {
     color: white;
 }
 
@@ -128,4 +231,19 @@ a {
 .view-work {
     font-weight: 800;
     font-size: 1.2rem;
+}
+
+/* Buttons */
+
+.btn {
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px 45px;
+    border-radius: 10px;
+    color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
 }
