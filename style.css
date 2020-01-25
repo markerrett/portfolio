@@ -12,6 +12,7 @@ body {
 
 ul {
     list-style: none;
+    padding: inherit;
 }
 
 a {
