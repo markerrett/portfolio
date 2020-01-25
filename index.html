@@ -12,14 +12,30 @@
 <body>
   <!-- Banner section -->
 <div class="header">
-  <h1>Mark Errett Content</h1>
-  <p>Expert Content<br>
-  From Me<br>
-  To You</p>
-  <a id="btn" href="#services">View Services</a>
+  <div id="header-title">
+      <div class="logo">
+        <a href="#hero"><img id="header-img" src="/images/me-logo.png" alt="Mark Errett Inc. Logo" /></a>
+      </div>
+      <p><a href="#hero">Mark Errett Content</a></p>
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#services">Services</a></li>
+        <li><a class="nav-link" href="#work">Work</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="hero" class="hero">
+    <h1>Mark Errett Content</h1>
+    <p>Expertly Crafted Content<br>
+    From Me<br>
+    To You</p>
+    <a class="btn" href="#services">View Services</a>
+  </div>
 </div>
   <!-- Cards section -->
-<section class="services">
+<section id="services" class="services">
   <div class="container">
     <h2>Services</h2>
     <div class="cards">
@@ -39,37 +55,52 @@
         <p>Need a WordPress website built for you? I can set it up and give you instructions for the future</p>
       </div>
     </div>
-    <p id="view"><a href="#work">View Work <i class="fas fa-chevron-down"></i></a></p>
+    <p class="next"><a href="#work">View Work <i class="fas fa-chevron-down"></i></a></p>
   </div>
     <!-- PUT VIEW EXAMPLES HERE-->
 </section>
 
 <!-- WORK SECTION -->
-<section class="work">
+<section id="work" class="work">
   <div class="container-work">
-    <h2 id="work-header">Work</h2>
+    <h2 class="work-header">Work</h2>
     <div class="cards">
-      <div class="cards-work">
+      <div class="cards-white">
         <img src="https://media-exp1.licdn.com/media-proxy/ext?w=1024&h=510&f=n&hash=NrRwk4VNWxmDBuhZIEJXM4tpAI0%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6jnhodx1Ey9KGTqAGj6E5DQJHUA3L0CHH05IbfPWi8eJTYKrCnpEBHKSVSjQBkeby1ETDpEo67Ldnte9gl35-xLZb5agYUbhl4j3lK6w" alt="TapSmart">
         <h3>TapSmart</h3>
         <p>Lead content writer for succesful how-to guides for iPhones & iPads with over 15m downloads and 4.5-rating</p>
         <p class="view-work"><a href="https://www.tapsmart.com/author/mark-errett/">View <i class="fas fa-chevron-right"></i></a></p>
       </div>
-      <div class="cards-work">
+      <div class="cards-white">
         <img src="images/l24.jpg" alt="Lottery24">
         <h3>Lottery24</h3>
-        <p>Help relaunch Lottery24 to an English audience by rewriting all Web copy and improve UI and UX quality</p>
+        <p>Relaunch Lottery24 to an English audience by rewriting all Web copy and improve overall UI and UX </p>
         <p class="view-work"><a href="https://www.lottery24.com">View <i class="fas fa-chevron-right"></i></a></p>
       </div>
-      <div class="cards-work">
+      <div class="cards-white">
         <img src="images/kob.jpg" alt="Katherine O'Brien">
         <h3>Katherine O'Brien</h3>
         <p>Redesigning Katherine's Wordpress website to include clear CTAs and introducing new elements to include social proof and contact details</p>
         <p class="view-work"><a href="https://katherineobrien.ca/">View <i class="fas fa-chevron-right"></i></a></p>
       </div>
     </div>
+    <p class="next-white"><a href="#contact">Get in Touch<i class="fas fa-chevron-down"></i></a></p>
   </div>
 </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <div class="cards-white">
+        <p>Let's skip to the chase and start working together. My email inbox is waiting.<br></p>
+        <p><a class="btn" href="mailto:markerrett@gmail.com">Email</a></p>
+        <p>If you'd prefer to hear my voice then feel free to call. <br>I was once told I sound like Hugh Grant if that reassures you...</p>
+        <p><a class="btn" href="tel:+447745167613">Call</a></p>
+    </div>
+  </div>
+</section>
+
   <!-- Footer section -->
 <footer class="footer"> 
   <p>Website created by Mark Errett 2020 ©</p>
